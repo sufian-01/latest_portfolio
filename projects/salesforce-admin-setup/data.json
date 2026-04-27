@@ -1,0 +1,14 @@
+{
+  "slug": "salesforce-admin-setup",
+  "title": "Salesforce Admin Setup",
+  "category": "CRM Customization",
+  "description": "A Salesforce admin implementation focused on clean CRM structure, automation flows, dashboards, and better sales visibility.",
+  "details": "The setup includes custom fields, user-friendly page layouts, reporting dashboards, and process automation so teams can track leads and customers with less friction.",
+  "images": [
+    "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80"
+  ],
+  "techStack": ["Salesforce Admin", "Flows", "Reports", "Dashboards", "CRM"],
+  "githubUrl": "https://github.com/"
+}

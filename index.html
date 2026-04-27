@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#050607" />
+    <meta name="author" content="Your Name" />
+    <meta name="keywords" content="portfolio, frontend developer, UI designer, web animator, freelancer" />
+    <meta
+      name="description"
+      content="A premium, futuristic personal portfolio website for designers, developers, and freelancers."
+    />
+    <meta property="og:title" content="Your Name | Frontend Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Premium portfolio for frontend development, UI design, motion, and responsive web experiences."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Your Name | Frontend Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Premium portfolio for frontend development, UI design, motion, and responsive web experiences."
+    />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80" />
+    <link rel="canonical" href="https://yourdomain.com/" />
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=900&q=80"
+    />
+    <title>Your Name | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <div class="page-transition" aria-hidden="true"></div>
+    <div class="ambient-bg" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="loader" role="status" aria-live="polite" aria-label="Loading portfolio">
+      <div class="loader-ring"></div>
+      <span>Loading</span>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Your Name home">
+          <span class="brand-mark">YN</span>
+          <span>Your Name</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="primary-menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Frontend Developer & Creative Web Animator</p>
+            <h1>Your Name</h1>
+            <p class="hero-tagline">
+              I build <span class="typing-text"></span><span class="typing-caret"></span>
+            </p>
+            <p class="hero-intro">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              vel lacus non eros luctus volutpat at vitae justo.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact">Start a Project</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" data-tilt>
+            <div class="portrait-shell">
+              <div class="orbital-ring ring-one" aria-hidden="true"></div>
+              <div class="orbital-ring ring-two" aria-hidden="true"></div>
+              <img
+                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=900&q=80"
+                alt="Developer workspace with a modern laptop setup"
+                width="900"
+                height="1125"
+                decoding="async"
+                fetchpriority="high"
+              />
+              <div class="floating-card card-top">
+                <strong>98%</strong>
+                <span>UI polish</span>
+              </div>
+              <div class="floating-card card-bottom">
+                <strong>24+</strong>
+                <span>Launches</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Design-minded engineering for premium digital products.</h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-image reveal" data-tilt>
+            <img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=900&q=80"
+              alt="Professional portrait placeholder"
+              width="900"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="about-content reveal">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              posuere ligula a justo facilisis, nec luctus turpis aliquet.
+              Suspendisse potenti. Donec non tellus sed mi mattis porta.
+            </p>
+            <div class="skills">
+              <article class="skill-card">
+                <span>HTML / CSS</span>
+                <div class="skill-bar" role="progressbar" aria-label="HTML and CSS skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="94">
+                  <span style="--level: 94%"></span>
+                </div>
+              </article>
+              <article class="skill-card">
+                <span>JavaScript</span>
+                <div class="skill-bar" role="progressbar" aria-label="JavaScript skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88">
+                  <span style="--level: 88%"></span>
+                </div>
+              </article>
+              <article class="skill-card">
+                <span>UI Motion</span>
+                <div class="skill-bar" role="progressbar" aria-label="UI motion skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="91">
+                  <span style="--level: 91%"></span>
+                </div>
+              </article>
+              <article class="skill-card">
+                <span>Responsive UX</span>
+                <div class="skill-bar" role="progressbar" aria-label="Responsive UX skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="96">
+                  <span style="--level: 96%"></span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Interfaces built for clarity, speed, and presence.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-tilt>
+            <img
+              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=900&q=80"
+              alt="Project dashboard preview"
+              width="900"
+              height="720"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="project-body">
+              <span>Dashboard</span>
+              <h3>Nebula Analytics</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#contact" aria-label="View details for Nebula Analytics">View Details</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <img
+              src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?auto=format&fit=crop&w=900&q=80"
+              alt="Mobile commerce application preview"
+              width="900"
+              height="720"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="project-body">
+              <span>Mobile UI</span>
+              <h3>Monarch Commerce</h3>
+              <p>Praesent ultricies, orci at dignissim blandit, mi justo.</p>
+              <a href="#contact" aria-label="View details for Monarch Commerce">View Details</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+              alt="Code editor and website preview"
+              width="900"
+              height="720"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="project-body">
+              <span>Web App</span>
+              <h3>Atlas Studio</h3>
+              <p>Vivamus sed sapien id magna vulputate eleifend.</p>
+              <a href="#contact" aria-label="View details for Atlas Studio">View Details</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Services</p>
+          <h2>Freelance support from concept to final launch.</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="m8 9-4 3 4 3" />
+                <path d="m16 9 4 3-4 3" />
+                <path d="m14 4-4 16" />
+              </svg>
+            </span>
+            <h3>Frontend Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 3 3 8l9 5 9-5-9-5Z" />
+                <path d="m3 16 9 5 9-5" />
+                <path d="m3 12 9 5 9-5" />
+              </svg>
+            </span>
+            <h3>UI / UX Design</h3>
+            <p>Integer euismod leo vitae tellus feugiat, at commodo dui.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M4 12a8 8 0 0 1 8-8" />
+                <path d="M12 20a8 8 0 0 0 8-8" />
+                <path d="m14 4-2-2-2 2" />
+                <path d="m10 20 2 2 2-2" />
+                <path d="M12 9v6" />
+                <path d="M9 12h6" />
+              </svg>
+            </span>
+            <h3>Motion & Interaction</h3>
+            <p>Sed id ipsum at sapien suscipit volutpat sed sed neque.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M4 13a8 8 0 0 1 16 0" />
+                <path d="M12 13 17 8" />
+                <path d="M6.5 18h11" />
+                <path d="M8 13h.01" />
+                <path d="M16 13h.01" />
+              </svg>
+            </span>
+            <h3>Website Optimization</h3>
+            <p>Donec tincidunt metus sed augue posuere, vitae luctus mi.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section achievements" id="achievements">
+        <div class="stats-panel reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Achievements</p>
+            <h2>Proof that details compound into trust.</h2>
+          </div>
+          <div class="stats-grid">
+            <article>
+              <strong class="counter" data-target="48">0</strong>
+              <span>Projects Completed</span>
+            </article>
+            <article>
+              <strong class="counter" data-target="32">0</strong>
+              <span>Happy Clients</span>
+            </article>
+            <article>
+              <strong class="counter" data-target="6">0</strong>
+              <span>Years Experience</span>
+            </article>
+            <article>
+              <strong class="counter" data-target="12">0</strong>
+              <span>Awards & Features</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-layout">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Have an ambitious idea? Let's make it feel effortless.</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              varius, arcu in porta gravida, massa sem finibus lacus.
+            </p>
+            <div class="social-links" aria-label="Social links">
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M8 11v8" />
+                  <path d="M8 8v.01" />
+                  <path d="M12 19v-8" />
+                  <path d="M12 14.5c0-2 1.2-3.5 3.2-3.5 1.9 0 2.8 1.2 2.8 3.4V19" />
+                  <path d="M4 4h16v16H4z" />
+                </svg>
+              </a>
+              <a href="#" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M9 19c-4 1.4-4-2-5-2.5" />
+                  <path d="M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6A4.7 4.7 0 0 0 18.7 7c.2-.7.2-1.8-.2-3 0 0-1-.3-3.3 1.3a11.5 11.5 0 0 0-6 0C6.9 3.7 5.9 4 5.9 4c-.4 1.2-.4 2.3-.2 3A4.7 4.7 0 0 0 4.4 10.5c0 4.6 2.7 5.7 5.4 6-.4.4-.6.9-.6 1.8V22" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter X">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="m4 4 11.5 16H20L8.5 4H4Z" />
+                  <path d="M4 20 20 4" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit" aria-live="polite">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">&uarr;</button>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

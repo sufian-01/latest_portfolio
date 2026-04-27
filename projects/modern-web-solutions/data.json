@@ -1,0 +1,14 @@
+{
+  "slug": "modern-web-solutions",
+  "title": "Modern Web Solutions",
+  "category": "Web Development",
+  "description": "A modern web solution built around performance, responsive design, clean content structure, and scalable backend patterns.",
+  "details": "This project combines premium interface design with practical engineering. It includes polished landing sections, structured service flows, API-ready architecture, and responsive components for desktop and mobile.",
+  "images": [
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1400&q=80"
+  ],
+  "techStack": ["Next.js", "Tailwind CSS", "Framer Motion", "FastAPI", "Responsive UI"],
+  "githubUrl": "https://github.com/"
+}

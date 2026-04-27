@@ -1,0 +1,14 @@
+{
+  "slug": "ai-workflow-automation",
+  "title": "AI Workflow Automation",
+  "category": "Automation System",
+  "description": "A smart workflow automation concept for reducing repetitive business tasks, routing leads, and improving response speed with AI-assisted logic.",
+  "details": "This project focuses on connecting business tools into a reliable automation layer. The system can classify incoming requests, trigger follow-up tasks, notify teams, and keep customer data organized without manual copy-paste work.",
+  "images": [
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1400&q=80"
+  ],
+  "techStack": ["Python", "n8n", "FastAPI", "AI Tools", "Automation"],
+  "githubUrl": "https://github.com/"
+}
