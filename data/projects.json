@@ -2,113 +2,107 @@
   {
     "id": "ai-resume-analyzer",
     "category": "python",
-    "title": "AI Resume Analyzer",
-    "description": "A Python app that reviews resumes, extracts skills, and returns role-fit insights with AI-assisted scoring.",
-    "details": "AI Resume Analyzer parses resume content, highlights missing keywords, and gives a practical match score for target roles. It is designed for fast screening workflows where candidates need clear, actionable feedback instead of vague summaries.",
+    "title": "Smart Resume Screening Tool",
+    "description": "A Python-based resume analyzer that extracts skills, compares role requirements, and produces clear match insights for faster hiring decisions.",
+    "details": "Smart Resume Screening Tool parses resume content, highlights missing keywords, and gives a practical match score for target roles. It is designed for fast screening workflows where candidates need clear, actionable feedback instead of vague summaries.",
     "images": [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=80"
+      "/py-pr1-a.png",
+      "/py-pr1-b.png",
+      "/py-pr1-c.png"
     ],
     "techStack": ["Python", "FastAPI", "NLP", "OpenAI", "PDF Parsing"],
-    "github": "https://github.com/"
+    "github": "https://github.com/sufian-01"
   },
   {
     "id": "data-scraping-dashboard",
     "category": "python",
-    "title": "Data Scraping Dashboard",
-    "description": "A scraping and reporting workflow that turns public web data into structured tables and simple dashboards.",
-    "details": "This project combines Python scraping scripts with scheduled cleanup and export logic. It is built for repeatable market research, lead enrichment, and listing-monitoring tasks where clean data matters more than raw volume.",
+    "title": "Market Data Scraping Dashboard",
+    "description": "A Python automation dashboard that collects web data, cleans it into structured datasets, and presents useful reporting views.",
+    "details": "Market Data Scraping Dashboard combines Python scraping scripts with scheduled cleanup and export logic. It is built for repeatable market research, lead enrichment, and listing-monitoring tasks where clean data matters more than raw volume.",
     "images": [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80"
+      "/py-pr1-b.png",
+      "/py-pr1-c.png",
+      "/py-pr1-a.png"
     ],
     "techStack": ["Python", "BeautifulSoup", "Pandas", "Automation", "CSV"],
-    "github": "https://github.com/"
+    "github": "https://github.com/sufian-01"
   },
   {
     "id": "crm-flow-setup",
     "category": "salesforce",
-    "title": "CRM Flow Setup",
-    "description": "A Salesforce admin setup with guided lead routing, field structure, and automated task creation.",
-    "details": "CRM Flow Setup focuses on making sales operations easier to follow. It includes clean object fields, simple page layouts, routing logic, and flow-driven reminders so teams can move leads forward without manual tracking.",
+    "title": "Lead Management Flow System",
+    "description": "A Salesforce admin build with guided lead routing, clean field structure, automated tasks, and practical CRM process improvements.",
+    "details": "Lead Management Flow System focuses on making sales operations easier to follow. It includes clean object fields, simple page layouts, routing logic, and flow-driven reminders so teams can move leads forward without manual tracking.",
     "images": [
-      "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80"
+      "/sf-pr1-a.png",
+      "/sf-pr1-b.png"
     ],
     "techStack": ["Salesforce Admin", "Flows", "Reports", "Dashboards", "CRM"],
-    "github": "https://github.com/"
+    "github": "https://github.com/sufian-01"
   },
   {
     "id": "sales-dashboard-pack",
     "category": "salesforce",
-    "title": "Sales Dashboard Pack",
-    "description": "A reporting package for pipeline visibility, activity tracking, and sales performance reviews.",
-    "details": "Sales Dashboard Pack organizes CRM metrics into useful dashboards for owners, managers, and sales users. The project emphasizes practical visibility: pipeline stages, conversion trends, activity follow-ups, and missed opportunities.",
+    "title": "Sales Performance Dashboard",
+    "description": "A Salesforce reporting package for pipeline visibility, activity tracking, conversion trends, and sales performance reviews.",
+    "details": "Sales Performance Dashboard organizes CRM metrics into useful dashboards for owners, managers, and sales users. The project emphasizes practical visibility: pipeline stages, conversion trends, activity follow-ups, and missed opportunities.",
     "images": [
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=1400&q=80"
+      "/sf-pr1-b.png",
+      "/sf-pr1-a.png"
     ],
     "techStack": ["Salesforce", "Reports", "Dashboards", "Data Modeling", "CRM"],
-    "github": "https://github.com/"
+    "github": "https://github.com/sufian-01"
   },
   {
     "id": "portfolio-platform",
     "category": "web-development",
-    "title": "Portfolio Platform",
-    "description": "A premium responsive portfolio built with reusable sections, smooth motion, and strong content hierarchy.",
-    "details": "Portfolio Platform is built as a polished personal brand system with focused sections, fast-loading UI, motion accents, and scalable content patterns for services, projects, and contact workflows.",
+    "title": "Responsive Portfolio Platform",
+    "description": "A polished personal portfolio built with reusable sections, responsive layouts, smooth motion, and clear project storytelling.",
+    "details": "Responsive Portfolio Platform is built as a polished personal brand system with focused sections, fast-loading UI, motion accents, and scalable content patterns for services, projects, and contact workflows.",
     "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1400&q=80"
+      "/front--.png",
+      "/front1---.png"
     ],
     "techStack": ["Next.js", "React", "Tailwind CSS", "Framer Motion", "TypeScript"],
-    "github": "https://github.com/"
+    "github": "https://github.com/sufian-01"
   },
   {
     "id": "service-booking-ui",
     "category": "web-development",
-    "title": "Service Booking UI",
-    "description": "A modern booking interface for service businesses with clear steps, responsive layouts, and clean forms.",
-    "details": "Service Booking UI turns a service funnel into a simple guided experience. It includes service cards, availability states, form validation patterns, and conversion-focused layouts designed for repeat use.",
+    "title": "Service Booking Interface",
+    "description": "A clean booking experience for service businesses with guided steps, responsive layouts, practical forms, and conversion-focused UI.",
+    "details": "Service Booking Interface turns a service funnel into a simple guided experience. It includes service cards, availability states, form validation patterns, and conversion-focused layouts designed for repeat use.",
     "images": [
-      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=1400&q=80"
+      "/front1---.png",
+      "/front--.png"
     ],
     "techStack": ["React", "Tailwind CSS", "Forms", "Responsive UI", "Next.js"],
-    "github": "https://github.com/"
+    "github": "https://github.com/sufian-01"
   },
   {
     "id": "ai-workflow-automation",
     "category": "ai-automation",
-    "title": "AI Workflow Automation",
-    "description": "A smart automation layer for classifying requests, triggering follow-ups, and reducing repetitive work.",
-    "details": "AI Workflow Automation connects business tools into reliable operational flows. It can classify messages, route work, notify the right people, and keep customer data organized without manual copy-paste.",
+    "title": "AI Client Workflow Automation",
+    "description": "An AI automation system that classifies client requests, triggers follow-ups, and reduces repetitive manual operations.",
+    "details": "AI Client Workflow Automation connects business tools into reliable operational flows. It can classify messages, route work, notify the right people, and keep customer data organized without manual copy-paste.",
     "images": [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80"
+      "/ai-pr1-a.png",
+      "/ai-pr1-b.png"
     ],
     "techStack": ["n8n", "Python", "FastAPI", "AI Tools", "Automation"],
-    "github": "https://github.com/"
+    "github": "https://github.com/sufian-01"
   },
   {
     "id": "support-chatbot-system",
     "category": "ai-automation",
-    "title": "Support Chatbot System",
-    "description": "An AI-assisted chatbot flow for capturing leads, answering FAQs, and escalating complex requests.",
-    "details": "Support Chatbot System provides a structured conversational layer for service businesses. It handles common questions, collects useful lead details, and passes qualified conversations into follow-up workflows.",
+    "title": "AI Support Chatbot System",
+    "description": "An AI-assisted chatbot flow for capturing leads, answering FAQs, and escalating complex customer requests cleanly.",
+    "details": "AI Support Chatbot System provides a structured conversational layer for service businesses. It handles common questions, collects useful lead details, and passes qualified conversations into follow-up workflows.",
     "images": [
-      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1400&q=80"
+      "/ai-pr1-b.png",
+      "/ai-pr1-a.png"
     ],
     "techStack": ["AI Chatbot", "Prompt Engineering", "Automation", "Webhooks", "CRM"],
-    "github": "https://github.com/"
+    "github": "https://github.com/sufian-01"
   }
 ]

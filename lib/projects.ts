@@ -27,28 +27,28 @@ const categoryCopy: Omit<ProjectCategory, "countLabel">[] = [
     id: "python",
     title: "Python Projects",
     description: "Automation scripts, data tools, APIs, and AI-assisted Python systems.",
-    image: "https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?auto=format&fit=crop&w=1200&q=80",
+    image: "/py-pr1-a.png",
     icon: "PY"
   },
   {
     id: "salesforce",
     title: "Salesforce Projects",
     description: "CRM setup, admin flows, dashboards, reports, and operational improvements.",
-    image: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?auto=format&fit=crop&w=1200&q=80",
+    image: "/sf-pr1-a.png",
     icon: "SF"
   },
   {
     id: "web-development",
     title: "Web Development Projects",
     description: "Modern responsive interfaces, full-stack app patterns, and polished product UI.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+    image: "/front--.png",
     icon: "WD"
   },
   {
     id: "ai-automation",
     title: "AI / Automation Projects",
     description: "Workflow systems, AI chat flows, tool integrations, and business automation.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
+    image: "/ai-pr1-a.png",
     icon: "AI"
   }
 ];

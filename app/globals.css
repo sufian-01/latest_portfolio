@@ -104,6 +104,67 @@ body::before {
     @apply rounded-full border border-white/15 bg-white/[0.06] px-4 py-2 text-sm font-extrabold text-white shadow-royal transition duration-300 hover:-translate-y-1 hover:border-neon/40 hover:bg-neon/10 hover:text-neon hover:shadow-glow;
   }
 
+  .skills-stage {
+    @apply relative overflow-hidden rounded-2xl border border-white/10 bg-black/20 p-3 backdrop-blur-2xl md:p-4;
+    perspective: 1200px;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.11),
+      0 24px 90px rgba(0, 0, 0, 0.28);
+  }
+
+  .skills-stage::before {
+    content: "";
+    position: absolute;
+    inset: -18%;
+    background:
+      radial-gradient(circle at 18% 20%, rgba(112, 215, 255, 0.17), transparent 22rem),
+      radial-gradient(circle at 86% 18%, rgba(141, 124, 255, 0.2), transparent 20rem),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.07), transparent 42%);
+    pointer-events: none;
+  }
+
+  .skill-card {
+    @apply relative flex min-h-28 items-center gap-3 overflow-hidden rounded-xl border border-white/15 p-3 shadow-royal backdrop-blur-xl;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+
+  .skill-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.18) 38%, transparent 58%);
+    opacity: 0;
+    transform: translateX(-65%);
+    transition: opacity 300ms ease, transform 520ms ease;
+    pointer-events: none;
+  }
+
+  .skill-card::after {
+    content: "";
+    position: absolute;
+    inset: auto 12% -34% 12%;
+    height: 56%;
+    background: radial-gradient(circle, rgba(112, 215, 255, 0.28), transparent 68%);
+    opacity: 0;
+    transition: opacity 300ms ease;
+    pointer-events: none;
+  }
+
+  .skill-card:hover::before {
+    opacity: 1;
+    transform: translateX(65%);
+  }
+
+  .skill-card:hover::after {
+    opacity: 1;
+  }
+
+  .skill-icon {
+    @apply relative z-10 grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-neon/25 bg-neon/10 text-neon shadow-glow transition duration-300 group-hover:-rotate-6 group-hover:scale-110 group-hover:border-white/35 group-hover:text-white;
+    transform: translateZ(26px);
+  }
+
   .form-field {
     @apply rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-white outline-none transition placeholder:text-silver/45 focus:border-neon focus:bg-black/40 focus:shadow-glow;
   }
@@ -281,54 +342,4 @@ body::before {
   .noise {
     display: none;
   }
-}
-
-/* CHAT UI FIX */
-.chat-bubble {
-  padding: 10px 14px;
-  border-radius: 12px;
-  margin-bottom: 8px;
-  max-width: 80%;
-  font-size: 14px;
-}
-
-.chat-user {
-  background: linear-gradient(135deg, #4f46e5, #7c3aed);
-  color: white;
-  margin-left: auto;
-}
-
-.chat-bot {
-  background: rgba(255,255,255,0.08);
-  color: #e5e7eb;
-}
-
-/* INPUT */
-.form-field {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  padding: 10px;
-  border-radius: 8px;
-  color: white;
-}
-
-/* BUTTON */
-.royal-button {
-  background: linear-gradient(135deg, #6366f1, #22c55e);
-  padding: 10px 16px;
-  border-radius: 10px;
-  color: white;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.royal-button:hover {
-  transform: scale(1.05);
-}
-
-/* CHAT PANEL */
-.glass {
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(20px);
-  border-left: 1px solid rgba(255,255,255,0.1);
 }

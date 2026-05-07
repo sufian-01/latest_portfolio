@@ -1,19 +1,7 @@
 import Image from "next/image";
 import { Reveal } from "./Motion";
+import SkillCards from "./SkillCards";
 import TiltCard from "./TiltCard";
-
-const skills = [
-  "Python",
-  "HTML",
-  "CSS",
-  "Flask",
-  "FastAPI",
-  "Automation (n8n)",
-  "Canva",
-  "AI Tools Usage",
-  "Prompt Engineering",
-  "Salesforce Admin"
-];
 
 export default function About() {
   return (
@@ -44,13 +32,7 @@ export default function About() {
           <div className="mt-10">
             <h3 className="text-sm font-black uppercase tracking-[0.16em] text-white/80">Skills</h3>
           </div>
-          <div className="mt-5 flex flex-wrap gap-3">
-            {skills.map((skill) => (
-              <div key={skill} className="skill-tag">
-                {skill}
-              </div>
-            ))}
-          </div>
+          <SkillCards />
         </Reveal>
       </div>
     </section>
