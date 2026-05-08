@@ -223,11 +223,15 @@ body::before {
   }
 
   .chat-bot {
-    @apply mr-auto border border-white/10 bg-white/[0.07] text-silver;
+    @apply mr-auto border border-white/10 bg-white/[0.075] text-silver backdrop-blur-xl;
   }
 
   .chat-user {
-    @apply ml-auto bg-royal-gradient text-ink;
+    @apply ml-auto bg-royal-gradient font-semibold text-ink;
+  }
+
+  .assistant-chip {
+    @apply inline-flex min-h-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.08] px-3 py-1.5 text-left text-xs font-bold text-white transition duration-300 hover:-translate-y-0.5 hover:border-neon/45 hover:bg-neon/10 hover:text-neon;
   }
 
   .typing-dots {

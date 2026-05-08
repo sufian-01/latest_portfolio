@@ -1,20 +1,28 @@
 [
   {
-    "id": "ai-resume-analyzer",
-    "category": "python",
-    "title": "Smart Resume Screening Tool",
-    "description": "A Python-based resume analyzer that extracts skills, compares role requirements, and produces clear match insights for faster hiring decisions.",
-    "details": "Smart Resume Screening Tool parses resume content, highlights missing keywords, and gives a practical match score for target roles. It is designed for fast screening workflows where candidates need clear, actionable feedback instead of vague summaries.",
-    "images": [
-      "/py-pr1-a.png",
-      "/py-pr1-b.png",
-      "/py-pr1-c.png"
-    ],
-    "techStack": ["Python", "FastAPI", "NLP", "OpenAI", "PDF Parsing"],
-    "github": "https://github.com/sufian-01"
-  },
+  "id": "ai-interview-system",
+  "category": "python",
+  "title": "AI Interview System",
+  "description": "An AI-powered interview platform that performs face verification, generates interview questions dynamically, evaluates answers, and creates performance reports for mock interview practice.",
+  "details": "The AI Interview System is a Python-based smart interview platform developed using Streamlit, OpenCV, and Groq API integration. The system verifies users through webcam-based face detection before starting the interview, generates AI-based questions according to the selected topic and difficulty level, supports voice/text responses, analyzes answers using keyword and confidence analysis, calculates scores, and generates professional PDF performance reports with personalized feedback.",
+  "images": [
+    "/py-pr1-a.png",
+    "/py-pr1-b.png",
+    "/py-pr1-c.png"
+  ],
+  "techStack": [
+    "Python",
+    "Streamlit",
+    "OpenCV",
+    "Groq API",
+    "SpeechRecognition",
+    "FPDF",
+    "NumPy"
+  ],
+  "github": "https://github.com/sufian-01/ai-interview-system"
+},
   {
-    "id": "data-scraping-dashboard",
+    "id": "ai-resume-guide",
     "category": "python",
     "title": "Market Data Scraping Dashboard",
     "description": "A Python automation dashboard that collects web data, cleans it into structured datasets, and presents useful reporting views.",
@@ -60,11 +68,12 @@
     "description": "A polished personal portfolio built with reusable sections, responsive layouts, smooth motion, and clear project storytelling.",
     "details": "Responsive Portfolio Platform is built as a polished personal brand system with focused sections, fast-loading UI, motion accents, and scalable content patterns for services, projects, and contact workflows.",
     "images": [
-      "/front--.png",
-      "/front1---.png"
+      "/wb-pr1-a.png",
+      "/wb-pr1-b.png",
+      "/wb-pr1-c.png"
     ],
     "techStack": ["Next.js", "React", "Tailwind CSS", "Framer Motion", "TypeScript"],
-    "github": "https://github.com/sufian-01"
+    "github": "https://github.com/sufian-01/latest_portfolio"
   },
   {
     "id": "service-booking-ui",
@@ -80,29 +89,53 @@
     "github": "https://github.com/sufian-01"
   },
   {
-    "id": "ai-workflow-automation",
-    "category": "ai-automation",
-    "title": "AI Client Workflow Automation",
-    "description": "An AI automation system that classifies client requests, triggers follow-ups, and reduces repetitive manual operations.",
-    "details": "AI Client Workflow Automation connects business tools into reliable operational flows. It can classify messages, route work, notify the right people, and keep customer data organized without manual copy-paste.",
-    "images": [
-      "/ai-pr1-a.png",
-      "/ai-pr1-b.png"
-    ],
-    "techStack": ["n8n", "Python", "FastAPI", "AI Tools", "Automation"],
-    "github": "https://github.com/sufian-01"
-  },
-  {
-    "id": "support-chatbot-system",
-    "category": "ai-automation",
-    "title": "AI Support Chatbot System",
-    "description": "An AI-assisted chatbot flow for capturing leads, answering FAQs, and escalating complex customer requests cleanly.",
-    "details": "AI Support Chatbot System provides a structured conversational layer for service businesses. It handles common questions, collects useful lead details, and passes qualified conversations into follow-up workflows.",
-    "images": [
-      "/ai-pr1-b.png",
-      "/ai-pr1-a.png"
-    ],
-    "techStack": ["AI Chatbot", "Prompt Engineering", "Automation", "Webhooks", "CRM"],
-    "github": "https://github.com/sufian-01"
-  }
+  "id": "ai-resume-guide",
+  "category": "ai-automation",
+  "title": "AI Resume Guide Platform",
+  "description": "A multi-AI powered resume analysis platform that helps users evaluate resumes, identify missing skills, generate learning roadmaps, and prepare for interviews.",
+  "details": "AI Resume Guide is a smart career assistant web application built with Flask, Python, SQLAlchemy, and multiple AI providers including OpenAI, Gemini, Groq, and DeepSeek. Users can sign up, upload resumes in PDF/DOCX format or manually enter content, select their preferred AI model, and receive structured career insights such as skill analysis, missing technologies, roadmap suggestions, and interview questions through an interactive dashboard.",
+  "images": [
+    "/ai-pr1-a.png",
+    "/ai-pr1-b.png"
+  ],
+  "techStack": [
+    "Python",
+    "Flask",
+    "SQLAlchemy",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "OpenAI",
+    "Gemini API",
+    "Groq API",
+    "DeepSeek API",
+    "MySQL",
+    "Responsive UI"
+  ],
+  "github": "https://github.com/sufian-01/Ai_carrier_guide"
+},
+{
+  "id": "ai-resume-guide",
+  "category": "ai-automation",
+  "title": "AI Portfolio Assistant & Smart Meeting Scheduler",
+  "description": "An AI-powered portfolio chatbot that answers queries about skills, projects, services, and intelligently schedules meetings using Cal.com API integration.",
+  "details": "This AI Portfolio Assistant works as a real conversational chatbot integrated inside a modern developer portfolio. It provides smart responses about Mohmmad Sufian’s background, technical skills, projects, services, and automation work. The system includes a complete meeting scheduling flow powered by Cal.com API, where users can select available slots, book meetings, receive automated email confirmations, and generate Google Meet links automatically. The chatbot also handles lead collection, stores meeting information in structured JSON format, and creates a smooth interactive user experience with intelligent conversational flow and responsive UI design.",
+  "images": [
+    "/ai-pr2-a.png",
+    "/ai-pr2-b.png"
+  ],
+  "techStack": [
+    "Next.js",
+    "TypeScript",
+    "Cal.com API",
+    "AI Chatbot",
+    "Automation",
+    "REST API",
+    "Prompt Engineering",
+    "Tailwind CSS",
+    "JSON Storage",
+    "Google Meet Integration"
+  ],
+  "github": "https://github.com/sufian-01/latest_portfolio"
+}
 ]
