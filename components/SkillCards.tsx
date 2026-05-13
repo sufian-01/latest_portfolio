@@ -1,7 +1,6 @@
 "use client";
 
-import { motion, useMotionTemplate, useMotionValue, useSpring } from "framer-motion";
-import type { MouseEvent } from "react";
+import { motion } from "framer-motion";
 
 type Skill = {
   name: string;
@@ -123,51 +122,24 @@ function SkillIcon({ type }: { type: Skill["icon"] }) {
 }
 
 function SkillCard({ skill, index }: { skill: Skill; index: number }) {
-  const rotateX = useSpring(useMotionValue(0), { stiffness: 220, damping: 24 });
-  const rotateY = useSpring(useMotionValue(0), { stiffness: 220, damping: 24 });
-  const glowX = useMotionValue("50%");
-  const glowY = useMotionValue("0%");
-  const background = useMotionTemplate`radial-gradient(circle at ${glowX} ${glowY}, rgba(112, 215, 255, 0.22), transparent 9rem), linear-gradient(145deg, rgba(255,255,255,0.13), rgba(255,255,255,0.045))`;
-
-  function handleMove(event: MouseEvent<HTMLDivElement>) {
-    const rect = event.currentTarget.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-
-    rotateX.set((y / rect.height - 0.5) * -14);
-    rotateY.set((x / rect.width - 0.5) * 14);
-    glowX.set(`${(x / rect.width) * 100}%`);
-    glowY.set(`${(y / rect.height) * 100}%`);
-  }
-
   return (
     <motion.div
       className="skill-card group"
-      style={{ rotateX, rotateY, background }}
-      initial={{ opacity: 0, y: 22, scale: 0.94 }}
+      initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.58, delay: index * 0.045, ease: [0.21, 0.8, 0.28, 1] }}
+      transition={{ duration: 0.48, delay: index * 0.04, ease: [0.21, 0.8, 0.28, 1] }}
       whileHover={{
-        y: -8,
-        scale: 1.05,
-        boxShadow: "0 24px 76px rgba(112, 215, 255, 0.24), 0 0 0 1px rgba(112, 215, 255, 0.46)"
-      }}
-      animate={{ y: [0, -4, 0] }}
-      onMouseMove={handleMove}
-      onMouseLeave={() => {
-        rotateX.set(0);
-        rotateY.set(0);
-        glowX.set("50%");
-        glowY.set("0%");
+        y: -4,
+        boxShadow: "0 18px 42px rgba(0, 0, 0, 0.26), 0 0 0 1px rgba(112, 215, 255, 0.36)"
       }}
     >
       <div className="skill-icon">
         <SkillIcon type={skill.icon} />
       </div>
-      <div className="relative z-10 min-w-0">
-        <p className="truncate text-sm font-black text-white md:text-base">{skill.name}</p>
-        <p className="mt-1 text-[0.68rem] font-extrabold uppercase tracking-[0.12em] text-neon/75">
+      <div className="relative z-10 min-w-0 text-center sm:text-left">
+        <p className="skill-title">{skill.name}</p>
+        <p className="skill-label">
           {skill.label}
         </p>
       </div>
@@ -178,7 +150,7 @@ function SkillCard({ skill, index }: { skill: Skill; index: number }) {
 export default function SkillCards() {
   return (
     <div className="skills-stage mt-5">
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:gap-4 xl:grid-cols-4">
+      <div className="grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2 md:gap-4 xl:grid-cols-3">
         {skills.map((skill, index) => (
           <SkillCard key={skill.name} skill={skill} index={index} />
         ))}

@@ -105,64 +105,70 @@ body::before {
   }
 
   .skills-stage {
-    @apply relative overflow-hidden rounded-2xl border border-white/10 bg-black/20 p-3 backdrop-blur-2xl md:p-4;
+    @apply relative max-w-2xl overflow-hidden rounded-2xl border border-white/10 bg-white/[0.035] p-3 backdrop-blur-xl md:p-4;
     perspective: 1200px;
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.11),
-      0 24px 90px rgba(0, 0, 0, 0.28);
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 18px 58px rgba(0, 0, 0, 0.24);
   }
 
   .skills-stage::before {
     content: "";
     position: absolute;
-    inset: -18%;
+    inset: 0;
     background:
-      radial-gradient(circle at 18% 20%, rgba(112, 215, 255, 0.17), transparent 22rem),
-      radial-gradient(circle at 86% 18%, rgba(141, 124, 255, 0.2), transparent 20rem),
-      linear-gradient(135deg, rgba(255, 255, 255, 0.07), transparent 42%);
+      radial-gradient(circle at 18% 0%, rgba(112, 215, 255, 0.08), transparent 18rem),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.055), transparent 48%);
+    opacity: 0.82;
     pointer-events: none;
   }
 
   .skill-card {
-    @apply relative flex min-h-28 items-center gap-3 overflow-hidden rounded-xl border border-white/15 p-3 shadow-royal backdrop-blur-xl;
+    @apply relative flex h-full min-h-32 items-center gap-4 overflow-hidden rounded-xl border border-white/[0.12] bg-white/[0.055] p-4 backdrop-blur-xl transition duration-300;
     transform-style: preserve-3d;
     will-change: transform;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 10px 30px rgba(0, 0, 0, 0.16);
   }
 
   .skill-card::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.18) 38%, transparent 58%);
-    opacity: 0;
-    transform: translateX(-65%);
-    transition: opacity 300ms ease, transform 520ms ease;
+    background: linear-gradient(145deg, rgba(112, 215, 255, 0.075), transparent 62%);
+    opacity: 0.72;
+    transition: opacity 260ms ease;
     pointer-events: none;
   }
 
   .skill-card::after {
     content: "";
     position: absolute;
-    inset: auto 12% -34% 12%;
-    height: 56%;
-    background: radial-gradient(circle, rgba(112, 215, 255, 0.28), transparent 68%);
-    opacity: 0;
-    transition: opacity 300ms ease;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid rgba(112, 215, 255, 0);
+    transition: border-color 260ms ease;
     pointer-events: none;
   }
 
-  .skill-card:hover::before {
-    opacity: 1;
-    transform: translateX(65%);
-  }
-
-  .skill-card:hover::after {
-    opacity: 1;
+  .skill-card:hover {
+    @apply border-neon/30 bg-white/[0.075];
   }
 
   .skill-icon {
-    @apply relative z-10 grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-neon/25 bg-neon/10 text-neon shadow-glow transition duration-300 group-hover:-rotate-6 group-hover:scale-110 group-hover:border-white/35 group-hover:text-white;
+    @apply relative z-10 grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-neon/25 bg-neon/10 text-neon transition duration-300 group-hover:border-neon/45 group-hover:bg-neon/15 group-hover:text-white;
     transform: translateZ(26px);
+  }
+
+  .skill-title {
+    @apply text-[0.98rem] font-black leading-snug tracking-normal text-white sm:text-base md:text-[1.05rem];
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+
+  .skill-label {
+    @apply mt-2 text-[0.68rem] font-extrabold uppercase leading-none tracking-[0.12em] text-neon/70;
   }
 
   .form-field {
@@ -192,26 +198,66 @@ body::before {
     opacity: 0.75;
   }
 
+  .services-grid {
+    @apply mx-auto grid max-w-5xl auto-rows-fr grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
   .service-card {
-    @apply glass relative min-h-64 overflow-hidden rounded-2xl p-6 transition duration-300 hover:-translate-y-2 hover:border-neon/35 hover:shadow-glow;
+    @apply relative flex h-full min-h-64 flex-col overflow-hidden rounded-2xl border border-white/[0.12] bg-white/[0.055] p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-1.5 hover:border-neon/35;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 16px 46px rgba(0, 0, 0, 0.2);
+  }
+
+  .service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(145deg, rgba(112, 215, 255, 0.08), rgba(255, 255, 255, 0.02) 42%, transparent 78%);
+    opacity: 0.78;
+    transition: opacity 300ms ease;
+    pointer-events: none;
   }
 
   .service-card::after {
     content: "";
     position: absolute;
-    inset: auto -20% -45% -20%;
-    height: 58%;
-    background: radial-gradient(circle, rgba(112, 215, 255, 0.18), transparent 68%);
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid rgba(112, 215, 255, 0);
     opacity: 0;
-    transition: opacity 300ms ease;
+    transition: opacity 300ms ease, border-color 300ms ease;
+    pointer-events: none;
   }
 
   .service-card:hover::after {
     opacity: 1;
+    border-color: rgba(112, 215, 255, 0.34);
+  }
+
+  .service-card:hover {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      0 20px 52px rgba(0, 0, 0, 0.26),
+      0 0 34px rgba(112, 215, 255, 0.12);
   }
 
   .service-icon {
-    @apply relative z-10 grid h-12 w-12 place-items-center rounded-xl border border-neon/25 bg-neon/10 font-black text-neon transition duration-300 group-hover:-rotate-6 group-hover:scale-110;
+    @apply relative z-10 grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-neon/25 bg-neon/10 text-sm font-black text-neon transition duration-300 group-hover:border-neon/45 group-hover:bg-neon/15 group-hover:text-white;
+  }
+
+  .service-content {
+    @apply relative z-10 mt-7 flex flex-1 flex-col;
+  }
+
+  .service-title {
+    @apply min-h-14 text-xl font-black leading-tight tracking-normal text-white;
+    text-wrap: balance;
+  }
+
+  .service-description {
+    @apply mt-4 flex-1 text-sm leading-7 text-silver/75;
+    text-wrap: pretty;
   }
 
   .category-icon {

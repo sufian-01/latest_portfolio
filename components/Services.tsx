@@ -9,15 +9,17 @@ export default function Services() {
         <h2 className="heading-lg">Premium digital services for automation, growth, and operations.</h2>
       </Reveal>
 
-      <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+      <div className="services-grid mt-12">
         {services.map((service, index) => (
-          <Reveal key={service.title} delay={index * 0.05}>
+          <Reveal key={service.title} delay={index * 0.05} className="h-full">
             <article className="service-card group">
               <span className="service-icon">
                 {service.icon}
               </span>
-              <h3 className="mt-8 text-lg font-black text-white">{service.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-silver/75">{service.description}</p>
+              <div className="service-content">
+                <h3 className="service-title">{service.title}</h3>
+                <p className="service-description">{service.description}</p>
+              </div>
             </article>
           </Reveal>
         ))}
