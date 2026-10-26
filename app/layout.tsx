@@ -1,47 +1,51 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap"
-});
-
 export const metadata: Metadata = {
-  title: "Mohmmad Sufian | AI Automation Engineer",
+  title: "Mohmmad Sufian | AI Automation Engineer & Agentic AI Specialist",
   description:
-    "Professional portfolio for AI automation, Salesforce administration, web development, chatbot systems, and digital operations.",
-  keywords: ["Mohmmad Sufian", "AI Automation", "Salesforce Admin", "Next.js", "Chatbot"],
+    "Professional portfolio of Mohmmad Sufian — AI Automation Engineer specializing in Agentic Process Automation (APA), RAG systems, LangGraph, Python, and scalable AI workflows.",
+  keywords: [
+    "Mohmmad Sufian",
+    "AI Automation Engineer",
+    "Agentic AI",
+    "LangGraph",
+    "RAG",
+    "LangChain",
+    "FastAPI",
+    "Python",
+    "Generative AI"
+  ],
   authors: [{ name: "Mohmmad Sufian" }],
   openGraph: {
-    title: "Mohmmad Sufian | AI Automation Engineer",
+    title: "Mohmmad Sufian | AI Automation Engineer & Agentic AI Specialist",
     description:
-      "A premium AI startup inspired portfolio built with Next.js, Tailwind, and Framer Motion.",
+      "AI Engineer specializing in Agentic Process Automation, LangGraph, RAG pipelines, and intelligent autonomous workflows.",
     type: "website",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+        url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "Premium analytics interface"
+        alt: "Mohmmad Sufian AI Automation Portfolio"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
     title: "Mohmmad Sufian | AI Automation Engineer",
-    description: "Premium personal portfolio for AI automation, Salesforce, and web development."
+    description: "AI Engineer specializing in Agentic Process Automation, LangGraph, RAG pipelines, and Python."
   }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         {children}
       </body>
     </html>
   );
 }
+

@@ -13,7 +13,7 @@ function getRuleBasedReply(message: string): AssistantResponse {
   if (/(who|about|sufian|intro|introduce|yourself)/.test(text)) {
     return {
       reply:
-        "Mohmmad Sufian is an AI Automation Engineer, Web Developer, and Salesforce Admin focused on building modern automation systems, AI-powered tools, CRM workflows, and scalable digital solutions.",
+        "Mohmmad Sufian is an AI Automation Engineer and Generative AI Developer focused on building Agentic Process Automation (APA) pipelines, RAG systems, multi-agent workflows, and scalable Python microservices.",
       suggestions: ["View Projects", "Services", "Book Meeting"],
     };
   }
@@ -22,8 +22,17 @@ function getRuleBasedReply(message: string): AssistantResponse {
   if (/(education|college|university|study|btech|12th|degree)/.test(text)) {
     return {
       reply:
-        "Sufian completed 12th from the BSEB Board and is currently pursuing B.Tech in Computer Science Engineering from Jamia Hamdard University (2023–2027).",
-      suggestions: ["Skills", "Projects", "Book Meeting"],
+        "Sufian is in his final year of B.Tech in Computer Science Engineering from Jamia Hamdard University (2023–2027) and completed 12th from BSEB Board.",
+      suggestions: ["Experience", "Skills", "Projects"],
+    };
+  }
+
+  // ===== EXPERIENCE =====
+  if (/(experience|job|work|intern|internship|multiply|tamizhan|edunet)/.test(text)) {
+    return {
+      reply:
+        "Sufian is currently an AI Engineer Intern at Multiply Tech India (Noida), building Agentic Process Automation (APA) pipelines with LangGraph and FastAPI. He is also a Freelance AI & Python Developer and former Technical Lead at NSDC Jamia Hamdard.",
+      suggestions: ["Projects", "Skills", "Book Meeting"],
     };
   }
 
@@ -33,8 +42,8 @@ function getRuleBasedReply(message: string): AssistantResponse {
   ) {
     return {
       reply:
-        "Core skills include Python, FastAPI, Flask, HTML, CSS, JavaScript, AI automation, n8n workflows, Prompt Engineering, Salesforce Admin, API integration, Canva, and modern web development.",
-      suggestions: ["Python Projects", "AI Projects", "Services"],
+        "Core skills: LangGraph, LangChain, Agentic AI (APA), RAG systems, Python, FastAPI, Google Gemini API, OpenAI GPT, FAISS, ChromaDB, Prompt Engineering, Human-in-the-Loop (HITL), Docker, and WhatsApp/Telegram automation.",
+      suggestions: ["Agentic AI", "RAG Systems", "Services"],
     };
   }
 
@@ -44,12 +53,12 @@ function getRuleBasedReply(message: string): AssistantResponse {
   ) {
     return {
       reply:
-        "Sufian has worked on AI automation systems, Salesforce workflows, portfolio platforms, chatbot systems, scraping dashboards, resume analyzers, and modern responsive web applications.",
+        "Sufian's top projects include: Multi-Agent Scheduling Assistant (LangGraph + FastAPI), AI Telegram Secretary, AI Stock Market Assistant with HITL, YouTube RAG Assistant, and AI Interview System.",
       action: "projects",
       suggestions: [
+        "Agentic AI Projects",
+        "RAG Projects",
         "Python Projects",
-        "Salesforce Projects",
-        "AI Projects",
       ],
     };
   }
@@ -60,7 +69,7 @@ function getRuleBasedReply(message: string): AssistantResponse {
   ) {
     return {
       reply:
-        "Available services include AI chatbot development, workflow automation, Salesforce setup, CRM optimization, portfolio websites, web apps, API integrations, automation systems, and business tools.",
+        "Available services include: Agentic Process Automation (APA), Custom RAG pipelines & Vector Search, AI WhatsApp/Telegram bots, FastAPI microservices, and Full-Stack AI web applications.",
       action: "services",
       suggestions: ["Book Meeting", "View Projects", "Contact"],
     };
@@ -84,7 +93,7 @@ function getRuleBasedReply(message: string): AssistantResponse {
   if (/(hi|hello|hey|hlo)/.test(text)) {
     return {
       reply:
-        "Hello 👋 I’m Sufian AI Assistant. You can ask about projects, skills, services, automation systems, or schedule a meeting.",
+        "Hello 👋 I’m Sufian AI Assistant. You can ask about my AI projects, agentic workflows, technical skills, services, or schedule a meeting.",
       suggestions: ["Projects", "Skills", "Book Meeting"],
     };
   }
@@ -97,7 +106,7 @@ function getRuleBasedReply(message: string): AssistantResponse {
   ) {
     return {
       reply:
-        "I focus on professional conversations related to projects, automation, AI systems, services, and meetings. Please ask something related to work or collaboration.",
+        "I focus on professional conversations related to AI engineering, agentic automation, RAG pipelines, and technical collaboration.",
       suggestions: ["View Projects", "Services", "Book Meeting"],
     };
   }
@@ -105,7 +114,7 @@ function getRuleBasedReply(message: string): AssistantResponse {
   // ===== DEFAULT =====
   return {
     reply:
-      "Please ask something related to Sufian's projects, AI automation, development services, Salesforce, or meeting scheduling.",
+      "Please ask something related to Sufian's AI projects, Agentic automation, LangGraph, RAG pipelines, backend development, or meeting scheduling.",
     suggestions: ["Projects", "Services", "Book Meeting"],
   };
 }

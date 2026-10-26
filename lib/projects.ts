@@ -11,10 +11,16 @@ export type Project = {
   github: string;
 };
 
-export type ProjectCategoryId = "python" | "salesforce" | "web-development" | "ai-automation";
+export type ProjectCategoryId =
+  | "agentic-ai"
+  | "rag-systems"
+  | "python"
+  | "web-development"
+  | "salesforce"
+  | "ai-automation";
 
 export type ProjectCategory = {
-  id: ProjectCategoryId;
+  id: string;
   title: string;
   description: string;
   image: string;
@@ -22,34 +28,34 @@ export type ProjectCategory = {
   countLabel: string;
 };
 
-const categoryCopy: Omit<ProjectCategory, "countLabel">[] = [
+const canonicalCategories: Omit<ProjectCategory, "countLabel">[] = [
+  {
+    id: "agentic-ai",
+    title: "Agentic AI & APA",
+    description: "Autonomous multi-agent systems, LangGraph pipelines, HITL workflows, and business bots.",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+    icon: "APA"
+  },
+  {
+    id: "rag-systems",
+    title: "RAG & Vector Search",
+    description: "Retrieval-Augmented Generation, FAISS vector embeddings, and context-grounded Q&A.",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80",
+    icon: "RAG"
+  },
   {
     id: "python",
-    title: "Python Projects",
-    description: "Automation scripts, data tools, APIs, and AI-assisted Python systems.",
-    image: "/python-front.png",
+    title: "Python AI & Backend",
+    description: "FastAPI microservices, OpenCV computer vision, Streamlit apps, and async workflows.",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
     icon: "PY"
   },
   {
-    id: "salesforce",
-    title: "Salesforce Projects",
-    description: "CRM setup, admin flows, dashboards, reports, and operational improvements.",
-    image: "/salesforce-front.png",
-    icon: "SF"
-  },
-  {
     id: "web-development",
-    title: "Web Development Projects",
-    description: "Modern responsive interfaces, full-stack app patterns, and polished product UI.",
-    image: "/web-front.png",
-    icon: "WD"
-  },
-  {
-    id: "ai-automation",
-    title: "AI / Automation Projects",
-    description: "Workflow systems, AI chat flows, tool integrations, and business automation.",
-    image: "/ai-front.png",
-    icon: "AI"
+    title: "AI Web Apps & Full-Stack",
+    description: "Next.js platforms, multi-model career engines, responsive UI, and API integrations.",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    icon: "WEB"
   }
 ];
 
@@ -60,7 +66,7 @@ export function getProjects(): Project[] {
 export function getProjectCategories(): ProjectCategory[] {
   const allProjects = getProjects();
 
-  return categoryCopy.map((category) => {
+  return canonicalCategories.map((category) => {
     const count = allProjects.filter((project) => project.category === category.id).length;
 
     return {
@@ -70,14 +76,28 @@ export function getProjectCategories(): ProjectCategory[] {
   });
 }
 
-export function getProjectCategory(categoryId: string) {
-  return getProjectCategories().find((category) => category.id === categoryId);
+function resolveCategoryId(categoryId: string): string {
+  if (categoryId === "salesforce" || categoryId === "ai-automation") {
+    return "agentic-ai";
+  }
+  return categoryId;
 }
 
-export function getProjectsByCategory(categoryId: string) {
-  return getProjects().filter((project) => project.category === categoryId);
+export function getProjectCategory(categoryId: string): ProjectCategory | undefined {
+  const resolvedId = resolveCategoryId(categoryId);
+  return getProjectCategories().find((category) => category.id === resolvedId);
 }
 
-export function getProject(categoryId: string, projectId: string) {
-  return getProjects().find((project) => project.category === categoryId && project.id === projectId);
+export function getProjectsByCategory(categoryId: string): Project[] {
+  const resolvedId = resolveCategoryId(categoryId);
+  return getProjects().filter((project) => project.category === resolvedId);
+}
+
+export function getProject(categoryId: string, projectId: string): Project | undefined {
+  const resolvedId = resolveCategoryId(categoryId);
+  return getProjects().find(
+    (project) =>
+      (project.category === resolvedId || project.category === categoryId) &&
+      project.id === projectId
+  );
 }

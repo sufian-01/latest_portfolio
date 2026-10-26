@@ -15,7 +15,8 @@ type CategoryPageProps = {
 };
 
 export function generateStaticParams() {
-  return getProjectCategories().map((category) => ({ slug: category.id }));
+  const cats = getProjectCategories().map((category) => ({ slug: category.id }));
+  return [...cats, { slug: "salesforce" }, { slug: "ai-automation" }];
 }
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {

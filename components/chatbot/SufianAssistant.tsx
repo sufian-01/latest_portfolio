@@ -83,7 +83,7 @@ function getPortfolioReply(message: string): ChatMessage {
     return {
       role: "bot",
       text:
-        "Mohmmad Sufian is an AI Automation Engineer and Salesforce Admin focused on smart automation, CRM systems, and practical AI-powered web solutions."
+        "Mohmmad Sufian is an AI Automation Engineer and Generative AI Developer focused on Agentic Process Automation (APA), LangGraph pipelines, RAG systems, and scalable Python microservices."
     };
   }
 
@@ -91,7 +91,7 @@ function getPortfolioReply(message: string): ChatMessage {
     return {
       role: "bot",
       text:
-        "Sufian completed 12th from BSEB Board and is pursuing B.Tech Computer Science at Jamia Hamdard University, 2023-2027."
+        "Sufian completed 12th from BSEB Board and is currently in his final year of B.Tech Computer Science at Jamia Hamdard University (2023–2027)."
     };
   }
 
@@ -99,15 +99,15 @@ function getPortfolioReply(message: string): ChatMessage {
     return {
       role: "bot",
       text:
-        "His skills include Python, FastAPI, Flask, HTML, CSS, n8n automation, AI tools, prompt engineering, Salesforce Admin, and Canva."
+        "His technical skills include LangGraph, LangChain, Python, FastAPI, RAG, FAISS, ChromaDB, Google Gemini API, OpenAI GPT, Prompt Engineering, Human-in-the-Loop, Docker, and WhatsApp/Telegram automation."
     };
   }
 
-  if (/(service|offer|hire|solution|automation|salesforce|website|chatbot|crm|scraping|ads|wordpress|e-?commerce)/.test(text)) {
+  if (/(service|offer|hire|solution|automation|agentic|rag|fastapi|website|chatbot|scraping)/.test(text)) {
     return {
       role: "bot",
       text:
-        "Sufian can help with AI automation, AI chatbots, web development, Salesforce setup, CRM automation, data scraping, social media, ads, WordPress, and e-commerce seller management.",
+        "Sufian specializes in Agentic Process Automation (APA), custom RAG systems, AI chatbots (WhatsApp/Telegram), FastAPI microservices, and full-stack AI web applications.",
       actions: [
         { type: "link", label: "Services", href: "/#services" },
         { type: "booking", label: "Book Meeting" }
@@ -119,7 +119,7 @@ function getPortfolioReply(message: string): ChatMessage {
     return {
       role: "bot",
       text:
-        "You can explore AI workflow automation, Salesforce admin setup, web solutions, dashboards, chatbot systems, and Python automation projects in the portfolio.",
+        "You can explore the Multi-Agent Scheduling Assistant, AI Telegram Secretary, AI Stock Market Assistant with HITL, YouTube RAG Assistant, and AI Interview System in the portfolio.",
       actions: [{ type: "link", label: "View Projects", href: "/#projects" }]
     };
   }
