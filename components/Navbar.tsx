@@ -8,7 +8,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-ink/70 backdrop-blur-2xl">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#07080e]/85 backdrop-blur-md">
       <nav className="mx-auto flex h-20 w-[min(1180px,calc(100%-2rem))] items-center justify-between">
         <a href="#home" className="flex items-center gap-3 font-black text-white group" aria-label="Mohmmad Sufian home">
           <span className="grid h-11 w-11 place-items-center rounded-xl border border-neon/30 bg-white/[0.08] text-neon shadow-[0_0_20px_rgba(112,215,255,0.2)] transition group-hover:scale-105 group-hover:border-neon">

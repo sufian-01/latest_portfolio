@@ -248,7 +248,7 @@ export default function SkillCards() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: index * 0.03 }}
-            className="group relative flex flex-col justify-between rounded-xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-neon/40 hover:bg-white/[0.07] hover:shadow-[0_12px_32px_rgba(0,0,0,0.35),0_0_24px_rgba(112,215,255,0.12)]"
+            className="group relative flex flex-col justify-between rounded-xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:border-neon/40 hover:bg-white/[0.07] hover:shadow-[0_12px_32px_rgba(0,0,0,0.35),0_0_20px_rgba(112,215,255,0.12)]"
           >
             <div>
               <div className="flex items-center justify-between gap-2 mb-3">

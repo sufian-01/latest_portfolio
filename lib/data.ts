@@ -43,7 +43,7 @@ export const fallbackProjects = [
     title: "Multi-Agent Scheduling Assistant",
     category: "Agentic AI & APA",
     image:
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     description: "Autonomous multi-agent system built with LangGraph and FastAPI for automated meeting coordination and PDF RAG."
   },
   {
@@ -51,7 +51,7 @@ export const fallbackProjects = [
     title: "AI Telegram Secretary",
     category: "Agentic AI",
     image:
-      "https://images.unsplash.com/photo-1618172193763-c511deb635ca?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1614680376593-902f749f7ffc?auto=format&fit=crop&w=1200&q=80",
     description: "Intelligent Telegram agent with LangGraph, SQLite persistent memory, and Google Workspace tool calling."
   },
   {

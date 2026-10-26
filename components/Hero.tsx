@@ -1,14 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 import { Reveal } from "./Motion";
 import TiltCard from "./TiltCard";
 
 const subheading = "AI Automation Engineer | Generative AI | Agentic AI | LangGraph | Python";
 
-export default function Hero() {
+const TypewriterSubheading = memo(function TypewriterSubheading() {
   const [typedText, setTypedText] = useState("");
 
   useEffect(() => {
@@ -19,34 +18,27 @@ export default function Hero() {
       if (index >= subheading.length) {
         window.clearInterval(timer);
       }
-    }, 32);
+    }, 28);
 
     return () => window.clearInterval(timer);
   }, []);
 
   return (
-    <section id="home" className="relative grid min-h-screen place-items-center overflow-hidden px-4 pb-20 pt-32">
-      {/* Ambient background glows */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_15%,rgba(112,215,255,0.12),transparent_32rem)]" />
-      <div className="absolute top-1/4 -left-20 -z-10 h-72 w-72 rounded-full bg-royal/10 blur-[120px]" />
-      <div className="absolute bottom-1/4 -right-20 -z-10 h-80 w-80 rounded-full bg-neon/10 blur-[130px]" />
+    <p className="typing-line mt-5 max-w-2xl font-semibold tracking-wide">
+      {typedText || "\u00A0"}
+    </p>
+  );
+});
 
-      <motion.div
-        aria-hidden="true"
-        className="pointer-events-none absolute right-[8%] top-[18%] h-44 w-44 rounded-[2.5rem] border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 to-transparent blur-[1px]"
-        animate={{ rotate: [0, 8, -6, 0], y: [0, -14, 8, 0] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        aria-hidden="true"
-        className="pointer-events-none absolute bottom-[14%] left-[7%] h-28 w-28 rounded-full border border-purple-400/20 bg-gradient-to-tr from-purple-500/10 to-transparent blur-[1px]"
-        animate={{ scale: [1, 1.12, 1], x: [0, 18, 0] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-      />
+export default function Hero() {
+  return (
+    <section id="home" className="relative grid min-h-[92vh] place-items-center overflow-hidden px-4 pb-16 pt-28 md:pt-32">
+      {/* Lightweight ambient background glows */}
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_15%,rgba(112,215,255,0.09),transparent_28rem)]" />
 
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-14 lg:grid-cols-[1.1fr_.9fr]">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1.12fr_.88fr]">
         <Reveal>
-          <div className="inline-flex items-center gap-2 rounded-full border border-neon/30 bg-neon/[0.08] px-3.5 py-1.5 text-xs font-black uppercase tracking-[0.16em] text-neon shadow-[0_0_20px_rgba(112,215,255,0.2)]">
+          <div className="inline-flex items-center gap-2 rounded-full border border-neon/30 bg-neon/[0.08] px-3.5 py-1.5 text-xs font-black uppercase tracking-[0.16em] text-neon shadow-[0_0_15px_rgba(112,215,255,0.15)]">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-neon opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-neon" />
@@ -61,9 +53,7 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="typing-line mt-5 max-w-2xl font-semibold tracking-wide">
-            {typedText || "\u00A0"}
-          </p>
+          <TypewriterSubheading />
 
           <p className="muted-copy mt-6 max-w-2xl">
             AI Engineer specializing in Agentic Process Automation (APA), LLM-powered applications,
@@ -103,7 +93,7 @@ export default function Hero() {
 
           <div className="mt-10 flex flex-wrap items-center gap-6 border-t border-white/10 pt-6 text-xs text-silver/80">
             <div>
-              <span className="block text-lg font-black text-white">8+</span>
+              <span className="block text-lg font-black text-white">10+</span>
               <span className="uppercase tracking-wider">AI Projects</span>
             </div>
             <div className="h-7 w-px bg-white/10" />
@@ -119,40 +109,28 @@ export default function Hero() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.12}>
-          <div className="relative mx-auto max-w-[480px] perspective-1000">
-            {/* Ambient decorative rotating halo rings */}
-            <motion.div
-              className="absolute -inset-4 rounded-3xl border border-neon/20 blur-[1px]"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 32, repeat: Infinity, ease: "linear" }}
-            />
-            <motion.div
-              className="absolute -inset-8 rounded-full border border-royal/20"
-              animate={{ rotate: -360 }}
-              transition={{ duration: 42, repeat: Infinity, ease: "linear" }}
-            />
-
-            <TiltCard className="relative overflow-hidden rounded-2xl border border-white/15 bg-gradient-to-b from-white/[0.08] to-white/[0.02] p-3 shadow-2xl backdrop-blur-xl">
+        <Reveal delay={0.08}>
+          <div className="relative mx-auto max-w-[460px]">
+            <TiltCard className="relative overflow-hidden rounded-2xl border border-white/15 bg-gradient-to-b from-white/[0.08] to-white/[0.02] p-2.5 shadow-2xl backdrop-blur-md">
               <Image
                 src="/front--.png"
                 alt="Mohmmad Sufian - AI Automation Engineer"
                 width={1100}
                 height={1350}
                 priority
-                className="aspect-[4/5] rounded-xl object-cover transition duration-500 group-hover:scale-[1.03]"
+                className="aspect-[4/5] rounded-xl object-cover transition-transform duration-300 group-hover:scale-[1.02]"
               />
 
               {/* Top-left badge: AI Automation */}
-              <div className="absolute left-6 top-8 rounded-xl border border-white/20 bg-ink/80 px-4 py-3 backdrop-blur-xl shadow-lg">
-                <strong className="block text-2xl font-black text-white tracking-tight">AI</strong>
-                <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-plasma">Automation</span>
+              <div className="absolute left-5 top-7 rounded-xl border border-white/20 bg-ink/85 px-3.5 py-2.5 backdrop-blur-md shadow-lg">
+                <strong className="block text-xl font-black text-white tracking-tight">AI</strong>
+                <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-plasma">Automation</span>
               </div>
 
-              {/* Bottom-right badge: Agentic AI & LangGraph (Replaces Salesforce) */}
-              <div className="absolute bottom-8 right-6 rounded-xl border border-neon/30 bg-ink/85 px-4 py-3 backdrop-blur-xl shadow-lg">
-                <strong className="block text-2xl font-black text-neon tracking-tight">AGENTIC</strong>
-                <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-silver">AI & LangGraph</span>
+              {/* Bottom-right badge: Agentic AI & LangGraph */}
+              <div className="absolute bottom-7 right-5 rounded-xl border border-neon/30 bg-ink/90 px-3.5 py-2.5 backdrop-blur-md shadow-lg">
+                <strong className="block text-xl font-black text-neon tracking-tight">AGENTIC</strong>
+                <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-silver">AI & LangGraph</span>
               </div>
             </TiltCard>
           </div>

@@ -4,6 +4,7 @@ export type Project = {
   id: string;
   category: ProjectCategoryId;
   title: string;
+  badge?: string;
   description: string;
   details: string;
   images: string[];
@@ -33,7 +34,7 @@ const canonicalCategories: Omit<ProjectCategory, "countLabel">[] = [
     id: "agentic-ai",
     title: "Agentic AI & APA",
     description: "Autonomous multi-agent systems, LangGraph pipelines, HITL workflows, and business bots.",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     icon: "APA"
   },
   {
@@ -47,14 +48,14 @@ const canonicalCategories: Omit<ProjectCategory, "countLabel">[] = [
     id: "python",
     title: "Python AI & Backend",
     description: "FastAPI microservices, OpenCV computer vision, Streamlit apps, and async workflows.",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    image: "/py-pr1-a.png",
     icon: "PY"
   },
   {
     id: "web-development",
     title: "AI Web Apps & Full-Stack",
     description: "Next.js platforms, multi-model career engines, responsive UI, and API integrations.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    image: "/ai-pr1-a.png",
     icon: "WEB"
   }
 ];

@@ -16,7 +16,7 @@ export default function About() {
       <div className="mt-12 grid items-start gap-12 lg:grid-cols-[.78fr_1.22fr]">
         <Reveal>
           <div className="sticky top-28">
-            <TiltCard className="overflow-hidden rounded-2xl border border-white/15 bg-white/[0.04] p-3 shadow-2xl backdrop-blur-xl">
+            <TiltCard className="overflow-hidden rounded-2xl border border-white/15 bg-white/[0.04] p-3 shadow-2xl backdrop-blur-md">
               <Image
                 src="/front1---.png"
                 alt="Mohmmad Sufian portrait"

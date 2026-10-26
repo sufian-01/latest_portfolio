@@ -75,7 +75,7 @@ export default function Education() {
               {experiences.map((exp, index) => (
                 <article
                   key={`${exp.company}-${index}`}
-                  className="group relative rounded-2xl border border-white/10 bg-white/[0.035] p-6 backdrop-blur-xl transition duration-300 hover:border-neon/30 hover:bg-white/[0.06] hover:shadow-lg"
+                  className="group relative rounded-2xl border border-white/10 bg-white/[0.035] p-6 backdrop-blur-md transition-all duration-200 hover:border-neon/30 hover:bg-white/[0.06] hover:shadow-lg"
                 >
                   <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                     <div>
@@ -117,7 +117,7 @@ export default function Education() {
               {education.map((item, index) => (
                 <article
                   key={`${item.degree}-${index}`}
-                  className="group relative rounded-2xl border border-white/10 bg-white/[0.035] p-6 backdrop-blur-xl transition duration-300 hover:border-neon/30 hover:bg-white/[0.06] hover:shadow-lg"
+                  className="group relative rounded-2xl border border-white/10 bg-white/[0.035] p-6 backdrop-blur-md transition-all duration-200 hover:border-neon/30 hover:bg-white/[0.06] hover:shadow-lg"
                 >
                   <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                     <div>
@@ -152,7 +152,7 @@ export default function Education() {
               {certifications.map((cert, index) => (
                 <article
                   key={`${cert.title}-${index}`}
-                  className="group relative flex flex-col justify-between rounded-xl border border-white/10 bg-white/[0.035] p-5 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-neon/35 hover:bg-white/[0.06] hover:shadow-glow"
+                  className="group relative flex flex-col justify-between rounded-xl border border-white/10 bg-white/[0.035] p-5 backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:border-neon/35 hover:bg-white/[0.06] hover:shadow-glow"
                 >
                   <div>
                     <span className="inline-block rounded-md border border-plasma/30 bg-plasma/10 px-2 py-0.5 text-[11px] font-black text-plasma uppercase tracking-wider">

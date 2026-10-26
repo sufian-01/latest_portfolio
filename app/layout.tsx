@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sufian-01.vercel.app"),
   title: "Mohmmad Sufian | AI Automation Engineer & Agentic AI Specialist",
   description:
     "Professional portfolio of Mohmmad Sufian — AI Automation Engineer specializing in Agentic Process Automation (APA), RAG systems, LangGraph, Python, and scalable AI workflows.",

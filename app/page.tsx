@@ -12,9 +12,8 @@ import Services from "@/components/Services";
 export default function Home() {
   return (
     <>
-      <div className="noise" aria-hidden="true" />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Education />

@@ -3,10 +3,11 @@
     "id": "multi-agent-scheduling-assistant",
     "category": "agentic-ai",
     "title": "Multi-Agent Scheduling Assistant",
-    "description": "An autonomous multi-agent AI assistant for meeting scheduling, automated emails, and context-aware PDF RAG document conversations.",
-    "details": "Built with Python, LangGraph, and FastAPI, this multi-agent assistant coordinates autonomous sub-agents to handle calendar scheduling, meeting notifications, and task orchestration. It integrates a RAG pipeline allowing users to upload internal company PDFs for context-grounded Q&A, backed by FAISS vector similarity and Google Gemini models.",
+    "badge": "LangGraph • Multi-Agent",
+    "description": "Autonomous multi-agent system built with LangGraph and FastAPI for automated meeting scheduling, email triggers, and context-aware PDF RAG conversations.",
+    "details": "Engineered an autonomous multi-agent coordination system using Python, LangGraph, and FastAPI. Distinct specialized agents collaborate to parse schedule requirements, verify calendar availability, trigger confirmation emails, and handle internal company PDF queries via FAISS vector similarity and Google Gemini models.",
     "images": [
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
       "/ai-pr1-a.png",
       "/ai-pr1-b.png"
     ],
@@ -25,10 +26,11 @@
     "id": "ai-telegram-secretary",
     "category": "agentic-ai",
     "title": "AI Telegram Secretary (Agentic AI)",
-    "description": "An intelligent Telegram productivity agent with LangGraph state workflows, SQLite persistent memory, and Google Workspace tool calling.",
-    "details": "AI Telegram Secretary automates day-to-day executive assistance directly through Telegram. Powered by LangGraph and Gemini 2.5 Flash, it understands complex natural language prompts, interacts with Gmail, Google Calendar, and Google Sheets APIs, and provides real-time weather and currency conversions via modular tool calling in FastAPI.",
+    "badge": "Telegram • Tool Calling",
+    "description": "An intelligent Telegram executive assistant with LangGraph state workflows, SQLite persistent memory, and Google Workspace tool calling.",
+    "details": "AI Telegram Secretary handles executive daily tasks directly inside Telegram. Powered by LangGraph and Gemini 2.5 Flash, it understands complex multi-intent prompts, coordinates with Gmail, Google Calendar, and Google Sheets APIs, and provides real-time weather and currency conversions via modular function calling in FastAPI.",
     "images": [
-      "https://images.unsplash.com/photo-1618172193763-c511deb635ca?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1614680376593-902f749f7ffc?auto=format&fit=crop&w=1200&q=80",
       "/ai-pr2-a.png",
       "/ai-pr2-b.png"
     ],
@@ -40,8 +42,7 @@
       "Gemini 2.5 Flash",
       "Telegram Bot API",
       "SQLite",
-      "Gmail API",
-      "Google Calendar API"
+      "Google APIs"
     ],
     "github": "https://github.com/sufian-01/ai-telegram-secretary"
   },
@@ -49,8 +50,9 @@
     "id": "ai-stock-market-hitl",
     "category": "agentic-ai",
     "title": "AI Stock Market Assistant with HITL",
-    "description": "A LangGraph financial assistant featuring real-time stock analytics and Human-in-the-Loop approval workflows for simulated trading execution.",
-    "details": "Engineered an agentic workflow with LangGraph and OpenAI GPT that performs live stock analysis and mock trade execution. Built an interrupt-driven Human-in-the-Loop (HITL) approval flow where high-stake decisions require explicit user confirmation. Features thread-based persistence using MemorySaver and an interactive Streamlit UI.",
+    "badge": "HITL • Financial AI",
+    "description": "LangGraph financial agent featuring live stock analytics and Human-in-the-Loop approval workflows for simulated algorithmic trading.",
+    "details": "Designed an agentic trading workflow with LangGraph and OpenAI GPT that executes live stock analysis and mock purchases. Built an interrupt-driven Human-in-the-Loop (HITL) approval flow where high-stakes transactions pause for explicit user confirmation. Features MemorySaver thread persistence and an interactive Streamlit chat interface.",
     "images": [
       "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
       "/py-pr1-b.png",
@@ -61,7 +63,6 @@
       "LangGraph",
       "LangChain",
       "OpenAI GPT",
-      "Tool Calling",
       "MemorySaver",
       "Streamlit",
       "Alpha Vantage API"
@@ -72,8 +73,9 @@
     "id": "youtube-rag-assistant",
     "category": "rag-systems",
     "title": "YouTube RAG Assistant",
-    "description": "End-to-end RAG application extracting video transcripts, generating semantic embeddings, and answering user queries using Gemini 2.5 Flash.",
-    "details": "Designed an end-to-end Retrieval-Augmented Generation pipeline using the YouTube Transcript API, recursive character text chunking, Hugging Face embeddings, and a FAISS vector index. Connected Gemini 2.5 Flash for grounded question-answering with timestamps, wrapped in a responsive Streamlit conversational interface.",
+    "badge": "FAISS • Video Q&A",
+    "description": "End-to-end RAG application extracting video transcripts, generating Hugging Face semantic embeddings, and answering user queries using Gemini 2.5 Flash.",
+    "details": "Constructed an end-to-end Retrieval-Augmented Generation pipeline using the YouTube Transcript API, recursive character text chunking, Hugging Face embeddings, and a FAISS vector index. Connected Gemini 2.5 Flash for timestamp-grounded question answering in a responsive Streamlit UI.",
     "images": [
       "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80",
       "/ai-pr1-a.png",
@@ -86,7 +88,7 @@
       "FAISS",
       "Google Gemini 2.5 Flash",
       "Streamlit",
-      "YouTube Transcript API"
+      "Transcript API"
     ],
     "github": "https://github.com/sufian-01/youtube-rag-assistant"
   },
@@ -94,6 +96,7 @@
     "id": "multitask-ai-chatbot",
     "category": "rag-systems",
     "title": "Multitask AI-Powered Chatbot",
+    "badge": "Multi-Tool • Memory",
     "description": "ChatGPT-style intelligent agent with real-time web search, image generation, weather lookup, and multi-turn conversational memory.",
     "details": "A versatile AI agent architecture implemented using LangGraph, Google Gemini, and DuckDuckGo API. Supports multi-tool function calling to dynamically retrieve live web info, generate visuals, check stock updates, and recall previous interactions across user sessions.",
     "images": [
@@ -116,10 +119,10 @@
     "id": "ai-interview-system",
     "category": "python",
     "title": "AI Smart Interview System",
-    "description": "Computer vision and LLM powered interview platform with facial authentication, voice Q&A, response scoring, and automated PDF reports.",
+    "badge": "OpenCV • Face Auth",
+    "description": "Computer vision and LLM powered mock interview platform with facial authentication, dynamic questions, voice/text evaluation, and automated PDF reports.",
     "details": "Smart interview platform built with Python, OpenCV, and Groq API. Performs webcam-based face detection prior to the interview, dynamically generates domain-specific questions, accepts speech or text inputs, evaluates confidence and keywords, and compiles detailed performance reports with downloadable PDFs.",
     "images": [
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
       "/py-pr1-a.png",
       "/py-pr1-b.png",
       "/py-pr1-c.png"
@@ -136,13 +139,35 @@
     "github": "https://github.com/sufian-01/ai-interview-system"
   },
   {
+    "id": "market-data-scraper",
+    "category": "python",
+    "title": "Market Data Scraping & Pipeline Dashboard",
+    "badge": "Automation • Scraping",
+    "description": "High-throughput data extraction and cleaning engine collecting unstructured web listings into verified tabular datasets with export workflows.",
+    "details": "A Python automation dashboard combining BeautifulSoup scraping scripts with scheduled data cleaning and deduplication logic. Built for repeatable market research, lead enrichment, and listing monitoring where data integrity and structured CSV/database export are essential.",
+    "images": [
+      "/py-pr1-b.png",
+      "/py-pr1-c.png",
+      "/py-pr1-a.png"
+    ],
+    "techStack": [
+      "Python",
+      "BeautifulSoup",
+      "Pandas",
+      "FastAPI",
+      "SQLite",
+      "Automation"
+    ],
+    "github": "https://github.com/sufian-01/market-data-scraper"
+  },
+  {
     "id": "ai-career-guide",
     "category": "web-development",
     "title": "AI Career Guide & Resume Evaluator",
-    "description": "Multi-model career assistance platform evaluating resumes, highlighting tech gaps, and creating personalized preparation roadmaps.",
+    "badge": "Multi-LLM • ATS Engine",
+    "description": "Multi-model career assistance web app evaluating resumes, detecting missing technologies, and creating personalized preparation roadmaps.",
     "details": "Full-stack web application built with Flask, SQLAlchemy, and multiple LLM backends (OpenAI, Gemini, Groq, DeepSeek). Users upload resumes in PDF or DOCX format, run multi-model comparisons, inspect keyword coverage, and generate customized career roadmap recommendations.",
     "images": [
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
       "/ai-pr1-a.png",
       "/ai-pr1-b.png"
     ],
@@ -153,8 +178,6 @@
       "OpenAI",
       "Gemini API",
       "Groq API",
-      "DeepSeek API",
-      "MySQL",
       "Tailwind CSS"
     ],
     "github": "https://github.com/sufian-01/Ai_carrier_guide"
@@ -163,10 +186,31 @@
     "id": "ai-portfolio-scheduler",
     "category": "web-development",
     "title": "AI Portfolio Assistant & Smart Scheduler",
-    "description": "A modern portfolio platform featuring an integrated conversational AI chatbot with Cal.com API meeting scheduling and Google Meet sync.",
-    "details": "Interactive Next.js platform integrating a custom AI assistant capable of answering technical inquiries and initiating autonomous booking flows. Features Cal.com API integration, automated confirmation emails, dynamic slot selection, and responsive dark-mode styling.",
+    "badge": "Cal.com API • Next.js",
+    "description": "Interactive Next.js platform integrating a custom conversational chatbot with Cal.com API meeting scheduling and automated Google Meet sync.",
+    "details": "Developer platform featuring a custom AI assistant that answers technical inquiries and handles an autonomous booking flow. Integrated with Cal.com API, automated email confirmations, dynamic slot picker, and responsive dark-mode styling.",
     "images": [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+      "/ai-pr2-a.png",
+      "/ai-pr2-b.png"
+    ],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Cal.com API",
+      "Google Meet",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "github": "https://github.com/sufian-01/latest_portfolio"
+  },
+  {
+    "id": "modern-web-solutions",
+    "category": "web-development",
+    "title": "Responsive Web Application Platform",
+    "badge": "Full Stack • UI/UX",
+    "description": "High-performance responsive web platform with modular components, fluid responsive grids, smooth animations, and API integrations.",
+    "details": "Production-ready web platform built with Next.js, React, and Tailwind CSS. Features reusable layout architectures, optimized image handling, mobile-first responsive interfaces, and seamless integration with backend APIs.",
+    "images": [
       "/wb-pr1-a.png",
       "/wb-pr1-b.png",
       "/wb-pr1-c.png"
@@ -174,11 +218,9 @@
     "techStack": [
       "Next.js",
       "React",
-      "TypeScript",
       "Tailwind CSS",
-      "Framer Motion",
-      "Cal.com API",
-      "Google Meet"
+      "TypeScript",
+      "Framer Motion"
     ],
     "github": "https://github.com/sufian-01/latest_portfolio"
   }
